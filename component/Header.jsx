@@ -29,7 +29,16 @@ const Header = () => {
           <p className="p-1 text-2xl mr-2 cursor-pointer font-medium text-white">
             Register
           </p>
-          <Image src="/image/cart.png" alt="" width={30} height={30} />
+          <div className="relative p-3">
+            <div className="cursor-pointer">
+              <Link href="/cart">
+                <Image src="/image/cart.png" alt="" width={30} height={30} />
+              </Link>
+            </div>
+            <span className="text-black font-medium bg-white absolute h-5 w-5 rounded-full top-1 right-0 flex items-center justify-center">
+              1
+            </span>
+          </div>
         </div>
       </div>
     </div>
